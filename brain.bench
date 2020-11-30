@@ -1,0 +1,19 @@
+INPUT(A)
+INPUT(B)
+INPUT(C)
+INPUT(D)
+
+OUTPUT(W)
+OUTPUT(X)
+OUTPUT(Y)
+OUTPUT(Z)
+
+E = AND(A,B,C)
+F = AND(A,B,D)
+G = AND(A,C,D)
+H = AND(B,C,D)
+
+W = OR(E,F,G,H)
+X = NAND(A,B)
+Y = NOT(C)
+Z = NOT(D)

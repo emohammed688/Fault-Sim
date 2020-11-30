@@ -1,0 +1,37 @@
+# 4 - inputs , 4 Not gates, 13 AND gates , 4 or gates
+INPUT(a)
+INPUT(b)
+INPUT(c)
+INPUT(d)
+
+A = NOT(a)
+B = NOT(b)
+C = NOT(c)
+D = NOT(d)
+
+g = AND(B, C)
+f = AND(B, D)
+n = AND(a, B)
+m = AND(a, C)
+
+h = AND(n, c)
+i = AND(b, m)
+j = AND(A, b, c)
+
+k = AND(a, C)
+l = AND(b, C)
+o = AND(C, D)
+
+q = AND(A, d)
+r = AND(B, d)
+s = AND(C, d)
+
+W = OR(g, f, n, m)
+X = OR(h, i, j)
+Y = OR(k, l, o)
+Z = OR(q, r, s)
+
+OUTPUT(W)
+OUTPUT(X)
+OUTPUT(Y)
+OUTPUT(Z)
